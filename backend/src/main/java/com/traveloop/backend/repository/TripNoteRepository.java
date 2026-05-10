@@ -1,9 +1,0 @@
-package com.traveloop.backend.repository;
-
-import com.traveloop.backend.entity.TripNote;
-import org.springframework.data.jpa.repository.JpaRepository;
-import java.util.List;
-
-public interface TripNoteRepository extends JpaRepository<TripNote, Long> {
-    List<TripNote> findByTripId(Long tripId);
-}
